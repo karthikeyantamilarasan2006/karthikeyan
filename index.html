@@ -1,106 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>College Login</title>
+    <title>Adhiparasakthi Engineering College - Login</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:white;
+            font-family:Arial, sans-serif;
+        }
 
-body{
-    background:linear-gradient(135deg,#b30000,#ff6666);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+        .container{
+            width:400px;
+            margin:60px auto;
+            background:white;
+            border:2px solid #cc0000;
+            border-radius:15px;
+            padding:30px;
+            text-align:center;
+            box-shadow:0px 0px 15px lightgray;
+        }
 
-.login-box{
-    width:350px;
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-    text-align:center;
-}
+        img{
+            width:140px;
+            height:140px;
+        }
 
-.login-box img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    margin-bottom:15px;
-}
+        h2{
+            color:#cc0000;
+            margin-top:10px;
+        }
 
-.login-box h2{
-    color:#b30000;
-    margin-bottom:5px;
-}
+        h3{
+            color:#555;
+            margin-bottom:20px;
+        }
 
-.login-box h4{
-    color:#555;
-    margin-bottom:25px;
-    font-size:14px;
-}
+        input{
+            width:90%;
+            padding:12px;
+            margin:10px;
+            border:1px solid gray;
+            border-radius:5px;
+            font-size:16px;
+        }
 
-input{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:15px;
-}
+        input[type=submit]{
+            background:#cc0000;
+            color:white;
+            border:none;
+            cursor:pointer;
+            font-size:18px;
+        }
 
-button{
-    width:100%;
-    padding:12px;
-    background:#b30000;
-    color:white;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-}
+        input[type=submit]:hover{
+            background:#990000;
+        }
 
-button:hover{
-    background:#800000;
-}
-
-.footer{
-    margin-top:15px;
-    font-size:13px;
-    color:#777;
-}
-</style>
+        p{
+            color:#cc0000;
+            font-weight:bold;
+        }
+    </style>
 
 </head>
+
 <body>
 
-<div class="login-box">
+<div class="container">
 
-    <!-- College Logo -->
+    <!-- Put logo.png in the same folder -->
     <img src="logo.png" alt="College Logo">
 
-    <h2>Adhiparasakthi Engineering College</h2>
-    <h4>Melmaruvathur</h4>
+    <h2>ADHIPARASAKTHI ENGINEERING COLLEGE</h2>
+
+    <h3>Melmaruvathur</h3>
 
     <form>
-        <input type="text" placeholder="Username" required>
 
-        <input type="password" placeholder="Password" required>
+        <input type="text" placeholder="Username" required><br>
 
-        <button type="submit">Login</button>
+        <input type="password" placeholder="Password" required><br>
+
+        <input type="submit" value="LOGIN">
+
     </form>
 
-    <div class="footer">
-        Study | Spirituality | Service
-    </div>
+    <br>
+
+    <a href="#">Forgot Password?</a>
+
+    <p>STUDY | SPIRITUALITY | SERVICE</p>
 
 </div>
 
